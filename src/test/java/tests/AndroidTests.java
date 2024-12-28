@@ -5,9 +5,9 @@ import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import android.WikipediaErrorScreen;
-import android.WikipediaMainScreen;
-import android.WikipediaSearchResultScreen;
+import screens.android.WikipediaErrorScreen;
+import screens.android.WikipediaMainScreen;
+import screens.android.WikipediaSearchResultScreen;
 
 @Tag("android")
 @Owner("Shterts Aleksey")

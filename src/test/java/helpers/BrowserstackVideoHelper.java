@@ -11,10 +11,10 @@ public class BrowserstackVideoHelper {
 
         String url = String.format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionId);
 
-         AuthConfig aConf = ConfigFactory.create(AuthConfig.class, System.getProperties());
+        AuthConfig authConfig = ConfigFactory.create(AuthConfig.class, System.getProperties());
 
         return given()
-                .auth().basic(aConf.user(), aConf.key())
+                .auth().basic(authConfig.user(), authConfig.key())
                 .get(url)
                 .then()
                 .log().status()

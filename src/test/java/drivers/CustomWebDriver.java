@@ -25,8 +25,6 @@ public class CustomWebDriver implements WebDriverProvider {
         MutableCapabilities caps = new MutableCapabilities();
         caps.setCapability("browserstack.user", authConfig.user());
         caps.setCapability("browserstack.key", authConfig.key());
-        //caps.setCapability("browserstack.user", "bsuser_Q76MrL");
-        //caps.setCapability("browserstack.key", "vwuqR9y2sc1mBA4UGNQZ");
         caps.setCapability("app", driverConfig.app());
         caps.setCapability("device", driverConfig.device());
         caps.setCapability("os_version", driverConfig.osVersion());

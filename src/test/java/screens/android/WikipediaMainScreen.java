@@ -1,13 +1,13 @@
-package android;
+package screens.android;
 
 import io.qameta.allure.Step;
-import android.components.SearchInputField;
+import screens.android.components.SearchInputComponent;
 
 public class WikipediaMainScreen {
     @Step("Ввести запрос поиска")
     public WikipediaMainScreen searchQuery(String query) {
 
-        new SearchInputField().clickSearchField().searchQuery(query);
+        new SearchInputComponent().clickSearchField().typeTextSearchField(query);
         return this;
     }
 }
