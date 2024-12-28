@@ -1,13 +1,13 @@
-package cloud.autotests.drivers;
+package drivers;
 
-import cloud.autotests.config.AuthConfig;
+import config.AuthConfig;
 import com.codeborne.selenide.WebDriverProvider;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import cloud.autotests.config.WebDriverConfig;
+import config.WebDriverConfig;
 
 import javax.annotation.Nonnull;
 import java.net.MalformedURLException;
@@ -23,10 +23,10 @@ public class CustomWebDriver implements WebDriverProvider {
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
 
         MutableCapabilities caps = new MutableCapabilities();
-        //caps.setCapability("browserstack.user", authConfig.user());
-       // caps.setCapability("browserstack.key", authConfig.key());
-        caps.setCapability("browserstack.user", "bsuser_Q76MrL");
-        caps.setCapability("browserstack.key", "vwuqR9y2sc1mBA4UGNQZ");
+        caps.setCapability("browserstack.user", authConfig.user());
+        caps.setCapability("browserstack.key", authConfig.key());
+        //caps.setCapability("browserstack.user", "bsuser_Q76MrL");
+        //caps.setCapability("browserstack.key", "vwuqR9y2sc1mBA4UGNQZ");
         caps.setCapability("app", driverConfig.app());
         caps.setCapability("device", driverConfig.device());
         caps.setCapability("os_version", driverConfig.osVersion());

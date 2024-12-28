@@ -1,7 +1,7 @@
-package cloud.autotests.android;
+package android;
 
 import io.qameta.allure.Step;
-import cloud.autotests.android.components.SearchInputField;
+import android.components.SearchInputField;
 
 public class WikipediaMainScreen {
     @Step("Ввести запрос поиска")

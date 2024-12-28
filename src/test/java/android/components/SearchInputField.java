@@ -1,4 +1,4 @@
-package cloud.autotests.android.components;
+package android.components;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;

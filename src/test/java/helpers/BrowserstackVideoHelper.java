@@ -1,6 +1,6 @@
-package cloud.autotests.helpers;
+package helpers;
 
-import cloud.autotests.config.AuthConfig;
+import config.AuthConfig;
 
 import org.aeonbits.owner.ConfigFactory;
 import static io.restassured.RestAssured.given;

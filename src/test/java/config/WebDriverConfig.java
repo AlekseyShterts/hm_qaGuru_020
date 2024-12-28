@@ -1,9 +1,8 @@
-package cloud.autotests.config;
+package config;
 
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:properties/${env}.properties",
         "classpath:properties/android.properties"
 })
 public interface WebDriverConfig extends Config {

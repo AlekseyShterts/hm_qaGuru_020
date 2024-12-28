@@ -1,13 +1,13 @@
-package cloud.autotests.tests;
+package tests;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import cloud.autotests.android.WikipediaErrorScreen;
-import cloud.autotests.android.WikipediaMainScreen;
-import cloud.autotests.android.WikipediaSearchResultScreen;
+import android.WikipediaErrorScreen;
+import android.WikipediaMainScreen;
+import android.WikipediaSearchResultScreen;
 
 @Tag("android")
 @Owner("Shterts Aleksey")
@@ -15,7 +15,7 @@ import cloud.autotests.android.WikipediaSearchResultScreen;
 public class AndroidTests extends TestBase {
     @Test
     @Feature("Positive case")
-    @DisplayName("Check access search")
+    @DisplayName("Check success search")
     void successfulSearchTest() {
 
         WikipediaMainScreen mainScreen = new WikipediaMainScreen();
