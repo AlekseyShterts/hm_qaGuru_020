@@ -11,9 +11,9 @@ public interface AuthConfig  extends Config {
     @DefaultValue("https://hub-cloud.browserstack.com/wd/hub")
     String remoteUrl();
 
-    @Key("browserstack.key")
+    @Key("key")
     String key();
 
-    @Key("browserstack.user")
+    @Key("user")
     String user();
 }
